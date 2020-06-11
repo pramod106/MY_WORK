@@ -1,0 +1,100 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  basicTimeStep 16
+  contactProperties [
+    ContactProperties {
+      softCFM 1e-05
+    }
+    ContactProperties {
+      material2 "CitroenCZeroWheels"
+      coulombFriction [
+        8
+      ]
+      softCFM 1e-05
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+    ContactProperties {
+      material2 "ToyotaPriusWheels"
+      coulombFriction [
+        8
+      ]
+      softCFM 1e-05
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+    ContactProperties {
+      material2 "LincolnMKZWheels"
+      coulombFriction [
+        8
+      ]
+      softCFM 1e-05
+      bumpSound ""
+      rollSound ""
+      slideSound ""
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.1390067119871522 0.9897155075471702 0.03376904119409235 4.818553832186815
+  position -18.183043848924644 6.113244815100708 7.742090190578938
+  follow "agent_0"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  translation -15 0 2.5
+}
+StraightRoadSegment {
+  translation -10 0 2.5
+  rotation 0 1 0 1.57
+  width 10
+  length 5010
+}
+SumoInterface {
+  gui FALSE
+  useNetconvert FALSE
+  enableWheelsRotation TRUE
+  maxVehicles 1
+  radius 2000
+  step 10
+}
+TeslaModel3 {
+  hidden position_0_0 -1.0905533712694659e-06
+  hidden position2_0_0 0.0002625888987185135
+  hidden position_0_1 1.0905533705487105e-06
+  hidden position2_0_1 0.00026258889707665814
+  hidden position_0_2 0.00016105216274911477
+  hidden position_0_3 0.00016105216274871806
+  hidden linearVelocity_0 0.00028082163720099883 8.688418545221187e-07 2.2362590250644966e-07
+  hidden angularVelocity_0 -5.926601479609205e-09 2.7693099424968947e-14 7.442726414802221e-06
+  hidden translation_1 0 0 0
+  hidden rotation_1 -0.99999998276185 0.00013129396558038723 0.0001312943046674127 1.5708011077915214
+  hidden linearVelocity_1 0.00027483839441717564 7.444747121335866e-07 2.319414636412158e-07
+  hidden angularVelocity_1 6.587639106463625e-07 -2.2648103776282607e-07 -0.0007608615505355779
+  hidden translation_2 0 0 0
+  hidden rotation_2 -0.9999999827618503 -0.0001312939647594626 -0.00013129430384648606 1.5708011077915205
+  hidden linearVelocity_2 0.0002748384152852523 7.444746906981505e-07 2.057811178154302e-07
+  hidden angularVelocity_2 5.530257328785663e-07 2.2648109556802188e-07 -0.0007608616348370347
+  hidden translation_3 0 0 0
+  hidden rotation_3 -0.9999999935155741 8.052578523817923e-05 8.052608102644775e-05 1.5708000064844256
+  hidden linearVelocity_3 0.000467336504338959 -1.0210810711038597e-06 3.5389575260929447e-07
+  hidden angularVelocity_3 1.1519150002120186e-06 7.253330224921867e-06 -0.0015392576022761214
+  hidden translation_4 0 0 0
+  hidden rotation_4 -0.9999999935155741 -8.052578523798087e-05 -8.052608102624941e-05 1.5708000064844256
+  hidden linearVelocity_4 0.00046733647527897584 -1.0210810932430847e-06 3.904097204734373e-07
+  hidden angularVelocity_4 1.2995900451092266e-06 -7.253330164323561e-06 -0.0015392574846904588
+  translation -0.0019610206814992814 0.2721305875275624 -1.5616137247571795e-06
+  rotation -0.003580559348655656 0.9999871897138067 0.0035777091879858054 1.5700128103639779
+  name "agent_0"
+  controller "ros_automobile"
+  controllerArgs "--name=agent_0 --clock --use-sim-time"
+  sensorsSlotCenter [
+    GPS {
+    }
+  ]
+}
